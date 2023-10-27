@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsxuec2eud2x"]
+
+[ext_resource type="Script" path="res://计分系统/player1积分牌子.gd" id="1_42b6c"]
+[ext_resource type="Script" path="res://计分系统/player2积分牌子.gd" id="2_0ia2i"]
+
+[node name="记分牌" type="Node2D"]
+metadata/_edit_horizontal_guides_ = [98.0]
+
+[node name="player1积分牌子" type="Label" parent="."]
+offset_left = 113.0
+offset_top = 98.0
+offset_right = 153.0
+offset_bottom = 121.0
+script = ExtResource("1_42b6c")
+
+[node name="player2积分牌子" type="Label" parent="."]
+offset_left = 1000.0
+offset_top = 99.0
+offset_right = 1040.0
+offset_bottom = 122.0
+script = ExtResource("2_0ia2i")

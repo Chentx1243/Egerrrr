@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://c6ebga6fenbxt"]
+
+[ext_resource type="Script" path="res://玩家/player1/player1.gd" id="1_3y6dv"]
+[ext_resource type="Texture2D" uid="uid://brmedwf7p017a" path="res://palyer.png" id="2_mtq55"]
+[ext_resource type="AudioStream" uid="uid://dtoinbuemq4at" path="res://碰撞音效2.wav" id="3_kkbg2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eurhs"]
+size = Vector2(18, 94)
+
+[node name="player1" type="Area2D"]
+scale = Vector2(1.13115, 1.42288)
+script = ExtResource("1_3y6dv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(12.5, 51)
+scale = Vector2(0.944444, 0.94)
+texture = ExtResource("2_mtq55")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(12.5, 51)
+shape = SubResource("RectangleShape2D_eurhs")
+
+[node name="pong" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_kkbg2")
+volume_db = 15.0

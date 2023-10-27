@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://cdha8blkgmqs0"]
+
+[ext_resource type="Script" path="res://装饰素材/树叶.gd" id="1_363u3"]
+[ext_resource type="Texture2D" uid="uid://ghpgvkvvwryu" path="res://叶子/0.png" id="1_l8bc6"]
+[ext_resource type="Texture2D" uid="uid://b4knphp2sqrgc" path="res://叶子/1.png" id="2_2i2ag"]
+[ext_resource type="Texture2D" uid="uid://5re4hxpe4ths" path="res://叶子/2.png" id="3_myyec"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ujkmw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_l8bc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_2i2ag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_myyec")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="树叶" type="Node2D"]
+script = ExtResource("1_363u3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2.46875, 2.46875)
+sprite_frames = SubResource("SpriteFrames_ujkmw")

@@ -1,0 +1,9 @@
+res://小球/area_2d.tscn
+res://Area2D.gd
+res://地图/ditu.tscn
+res://计分系统/记分牌.tscn
+res://玩家/player1/player1.tscn
+res://玩家/player2/player2.tscn
+res://玩家/Aplayer/aplayer1.tscn
+res://装饰素材/树叶.tscn
+res://装饰素材/仙人掌.tscn

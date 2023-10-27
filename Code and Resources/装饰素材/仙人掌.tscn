@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://hr8uno8nxx5g"]
+
+[ext_resource type="Script" path="res://装饰素材/仙人掌.gd" id="1_6tkxs"]
+[ext_resource type="Texture2D" uid="uid://0ol3p5mya1dh" path="res://仙人掌1/0.png" id="2_m51p1"]
+[ext_resource type="Texture2D" uid="uid://booi6cfbwe00e" path="res://仙人掌1/1.png" id="3_535s3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f6la1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_m51p1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_535s3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="仙人掌" type="Node2D"]
+script = ExtResource("1_6tkxs")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(6.24469, 6.23133)
+sprite_frames = SubResource("SpriteFrames_f6la1")
